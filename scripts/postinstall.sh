@@ -6,6 +6,7 @@ export PKG_PATH="$MIRROR/pub/OpenBSD/`uname -r`/packages/`arch -s`/"
 
 # set pkg path for users
 echo "export PKG_PATH=\"$PKG_PATH\"" >> /root/.profile
+mkdir -p /home/vagrant
 echo "export PKG_PATH=\"$PKG_PATH\"" >> /home/vagrant/.profile
 
 # install wget/curl
